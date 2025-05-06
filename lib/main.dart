@@ -1,33 +1,18 @@
 import 'package:flutter/material.dart';
-import 'homepage.dart';
-import 'sidebar/sidebar.dart';
+import 'drawer.dart';
 
-void main() {
-  runApp(Telegram());
-}
+void main() => runApp(MyApp());
 
-class Telegram extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      title: 'Telegram Drawer',
+      home: Scaffold(
+        appBar: AppBar(title: Text('Telegram')),
+        drawer: AppDrawer(),
+        body: Center(child: Text('Home')),
       ),
-      home: HomeWithSidebar(),
-    );
-  }
-}
-
-class HomeWithSidebar extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Home'),
-      ),
-      drawer: SideBar(), 
-      body: HomePage(),  
     );
   }
 }

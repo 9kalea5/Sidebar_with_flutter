@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NewGroup extends StatelessWidget {
+class NewGroupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        "New Group",
-        style: TextStyle(
-          fontWeight: FontWeight.w900,
-          fontSize: 28),),
+    return Scaffold(
+      appBar: AppBar(title: Text('My Profile')),
+      body: Center(
+        child: Image.asset('assets/profile.png'),
+      ),
     );
   }
 }

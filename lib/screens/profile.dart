@@ -6,7 +6,7 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('My Profile')),
       body: Center(
-        child: Image.asset('assets/profile.png'),
+        child: Image.asset('https://cdn-icons-png.flaticon.com/512/3135/3135715.png'),
       ),
     );
   }
